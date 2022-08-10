@@ -1,4 +1,4 @@
-@charset 'utf-8';
+@charset "utf-8";
 
 @import 'settings';
 @import 'foundation';
@@ -58,8 +58,160 @@
 @include foundation-float-classes;
 @include foundation-flex-classes;
 @include foundation-visibility-classes;
-// @include foundation-prototype-classes;
+@include foundation-prototype-classes;
 
 // Motion UI
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+$menu-underline-from-center-bg: $white;
+$menu-underline-from-center-border-thickness: 0.25rem;
+
+.top-bar-bg-green {
+  background-color: $vnu-bg-green;
+  padding: 0.5rem 0;
+
+  .is-dropdown-submenu {
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+  }
+
+  .is-dropdown-submenu-parent {
+    a {
+      color: $white;
+    }
+    .is-submenu-item {
+      a {
+        color: $vnu-link-gray;
+        padding: 1.2rem 1.5rem;
+      }
+      a:hover {
+        color: $vnu-link-hover-green;
+      }
+      &:hover {
+        background-color: $vnu-bg-hover-green;
+        border-radius: 8px;
+      }
+    }
+  }
+
+  .is-active {
+    >a {
+      color: $white !important;
+    }
+  }
+
+  .search-form {
+    border-radius: $global-radius;
+    background-image: url('../images/search-ico.png');
+    background-position: 0.625rem 0.625rem;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    padding: 0.75rem 1.25rem 0.75rem 2rem;
+  }
+}
+
+.hover-underline-menu {
+  width: 100%;
+
+  .is-dropdown-submenu {
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+  }
+
+  .menu {
+    background-color: $menu-underline-from-center-bg;
+
+    .underline-from-center {
+      position: relative;
+
+      a {
+        color: $vnu-link-gray;
+        padding: 1.2rem 1.5rem;
+      }
+
+      a:hover {
+        color: $vnu-link-hover-green;
+      }
+
+      .is-submenu-item:hover {
+        background-color: $vnu-bg-hover-green;
+        border-radius: 8px;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: calc(100% - #{$menu-underline-from-center-border-thickness});
+        border-bottom: $menu-underline-from-center-border-thickness solid $vnu-border-green;
+        border-radius: 0.25rem;
+        left: 50%;
+        right: 50%;
+        transition: all 0.5s ease;
+      }
+
+      &:hover::after {
+        left: 0;
+        right: 0;
+        transition: all 0.5s ease;
+      }
+    }
+  }
+}
+
+.vnu-header-logo {
+
+  height: 150px;
+
+  .vnu-desc {
+    color: $vnu-text-green;
+
+    h4 {
+      font-size: 1.5rem;
+      letter-spacing: 0.25rem;
+    }
+    p {
+      font-size: 2rem;
+    }
+  }
+}
+
+.border-top-green {
+  border-top: 1px solid #67B38B;
+}
+
+$offcanvas-full-screen-bg: $black;
+$offcanvas-full-screen-side: left;
+$offcanvas-full-screen-closebutton-size: 5rem;
+
+.offcanvas-full-screen {
+  @include off-canvas-base($background: $offcanvas-full-screen-bg, $transition: 0.3s ease-in-out);
+  @include off-canvas-position($position: $offcanvas-full-screen-side, $size: 100%);
+}
+
+.offcanvas-full-screen-inner {
+  padding: 1rem;
+  text-align: center;
+}
+
+.offcanvas-full-screen-menu {
+  @include menu-base;
+  @include menu-direction(vertical);
+
+  a {
+    color: $white;
+
+    &:hover {
+      color: darken($white, 30%);
+    }
+  }
+}
+
+.offcanvas-full-screen-close {
+  color: $white;
+  font-size: $offcanvas-full-screen-closebutton-size;
+
+  &:hover {
+    color: darken($white, 30%);
+  }
+}

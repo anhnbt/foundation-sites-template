@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Header</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<header>
+    <!-- Sub Navigation -->
+    <div class="top-bar-bg-green show-for-large">
+        <div class="grid-x grid-padding-x grid-container">
+            <div class="cell small-6">
+                <input type="search" class="search-form margin-0" name="q" id="q" placeholder="Tìm kiếm">
+            </div>
+            <div class="cell small-6">
+                <ul class="dropdown menu align-right" data-dropdown-menu>
+                    <li>
+                        <a href="#" class="">One</a>
+                        <ul class="menu vertical">
+                            <li><a href="#">One</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /Sub Navigation -->
+    <!-- logo and banner -->
+    <div class="grid-x grid-padding-x align-middle vnu-header-logo grid-container">
+        <div class="cell small-1" data-responsive-toggle="offcanvas-full-screen" data-hide-for="medium">
+            <button class="menu-icon dark" type="button" data-toggle="offcanvas-full-screen"></button>
+        </div>
+        <div class="cell small-5 medium-6 large-3">
+            <img src="images/logo-vnu.png" alt="VNU Logo">
+        </div>
+        <div class="cell small-6 medium-6 large-8">
+            <div class="media-object align-middle">
+                <div class="media-object-section">
+                    <img src="images/logo-clb-cuu-sinh-vien-vnu.png" alt="company logo">
+                </div>
+                <div class="media-object-section vnu-desc show-for-large">
+                    <h4>Nhân thành tựu - Nối yêu thương</h4>
+                    <p class="font-bold text-uppercase margin-0">chung tay cùng phát triển</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /logo and banner -->
+    <nav class="hover-underline-menu border-top-green show-for-large" data-menu-underline-from-center>
+        <div class="grid-container">
+            <ul class="dropdown menu align-spaced" data-dropdown-menu>
+                <li class="parent has-submenu">
+                    <a href="#">Giới thiệu</a>
+                    <ul class="menu">
+                        <li><a href="#">Sứ mệnh lịch sử</a></li>
+                        <li><a href="#">Two</a></li>
+                        <li><a href="#">Three</a></li>
+                    </ul>
+                </li>
+                <li class="parent">
+                    <a href="#">Kết nối</a>
+                    <ul class="menu">
+                        <li><a href="#">One</a></li>
+                        <li><a href="#">Two</a></li>
+                        <li><a href="#">Three</a></li>
+                    </ul>
+                </li>
+                <li class="parent">
+                    <a href="#">Chia sẻ</a>
+                </li>
+                <li class="parent">
+                    <a href="#">Hợp tác</a>
+                </li>
+                <li class="parent">
+                    <a href="#">Thành công</a>
+                </li>
+                <li class="parent">
+                    <a href="#">Đăng ký thành viên</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="offcanvas-full-screen" class="offcanvas-full-screen show-for-small-only" data-off-canvas data-transition="overlap">
+        <div class="offcanvas-full-screen-inner">
+            <button class="offcanvas-full-screen-close" aria-label="Close menu" type="button" data-close>
+                <span aria-hidden="true">&times;</span>
+            </button>
+
+            <ul class="offcanvas-full-screen-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/what-input/dist/what-input.js"></script>
+<script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
