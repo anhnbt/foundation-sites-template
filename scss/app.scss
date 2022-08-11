@@ -3,6 +3,7 @@
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
+@import "carousel";
 
 // Global styles
 @include foundation-global-styles;
@@ -100,15 +101,6 @@ $menu-underline-from-center-border-thickness: 0.25rem;
       color: $white !important;
     }
   }
-
-  .search-form {
-    border-radius: $global-radius;
-    background-image: url('../images/search-ico.png');
-    background-position: 0.625rem 0.625rem;
-    background-repeat: no-repeat;
-    background-size: 16px;
-    padding: 0.75rem 1.25rem 0.75rem 2rem;
-  }
 }
 
 .hover-underline-menu {
@@ -132,6 +124,12 @@ $menu-underline-from-center-border-thickness: 0.25rem;
 
       a:hover {
         color: $vnu-link-hover-green;
+      }
+
+      .is-active {
+        >a {
+          background-color: transparent !important;
+        }
       }
 
       .is-submenu-item:hover {
@@ -177,7 +175,7 @@ $menu-underline-from-center-border-thickness: 0.25rem;
 }
 
 .border-top-green {
-  border-top: 1px solid #67B38B;
+  border-top: 1px solid #CCE6D8;
 }
 
 $offcanvas-full-screen-bg: $black;
@@ -186,32 +184,46 @@ $offcanvas-full-screen-closebutton-size: 5rem;
 
 .offcanvas-full-screen {
   @include off-canvas-base($background: $offcanvas-full-screen-bg, $transition: 0.3s ease-in-out);
-  @include off-canvas-position($position: $offcanvas-full-screen-side, $size: 100%);
+  @include off-canvas-position($position: $offcanvas-full-screen-side, $orientation: horizontal, $sizes: 100%);
 }
 
-.offcanvas-full-screen-inner {
-  padding: 1rem;
-  text-align: center;
+.menu-inner {
+  padding: 1rem !important;
 }
 
-.offcanvas-full-screen-menu {
-  @include menu-base;
-  @include menu-direction(vertical);
-
-  a {
-    color: $white;
-
-    &:hover {
-      color: darken($white, 30%);
-    }
-  }
+.menu-search-inner {
+  padding: 0 1rem;
 }
 
-.offcanvas-full-screen-close {
-  color: $white;
-  font-size: $offcanvas-full-screen-closebutton-size;
+.search-form {
+  border-radius: $global-radius;
+  background-image: url('../images/search-ico.png');
+  background-position: 0.625rem 0.625rem;
+  background-repeat: no-repeat;
+  background-size: 16px;
+  padding: 0.75rem 1.25rem 0.75rem 2rem;
+}
 
-  &:hover {
-    color: darken($white, 30%);
-  }
+.orbit-previous, .orbit-next {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 100px;
+}
+
+.orbit-previous {
+  left: 40px;
+}
+
+.orbit-next {
+  right: 40px;
+}
+
+.orbit-bullets {
+  position: absolute;
+  bottom: 18px;
+  left: 0;
+  right: 0;
+}
+
+.orbit-bullets button {
+  
 }
