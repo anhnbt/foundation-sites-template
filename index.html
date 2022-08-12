@@ -1,167 +1,564 @@
-<!doctype html>
-<html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+<!DOCTYPE html>
+<html lang="vi-VN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VNU</title>
     <link rel="stylesheet" href="css/app.css">
-  </head>
-  <body>
-    <div class="grid-container">
-      <div class="grid-x grid-padding-x">
-        <div class="large-12 cell">
-          <h1>Welcome to Foundation</h1>
+    <link rel="stylesheet" href="foundation-icons/foundation-icons.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+</head>
+<body>
+
+<header>
+    <!-- Sub Navigation -->
+    <div class="top-bar-bg-green show-for-medium">
+        <div class="grid-x grid-padding-x grid-container">
+            <div class="cell small-6">
+                <input type="search" class="search-form margin-0" name="q" id="q" placeholder="Tìm kiếm">
+            </div>
+            <div class="cell small-6">
+                <ul class="dropdown menu align-right" data-dropdown-menu>
+                    <li>
+                        <a href="#" class="">Các đơn vị thành viên và trực thuộc VNU</a>
+                        <ul class="menu vertical">
+                            <li><a href="#">Alumni của các trường thành viên VNU</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
-
-      <div class="grid-x grid-padding-x">
-        <div class="large-12 cell">
-          <div class="callout">
-            <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-            <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-            <p>Once you've exhausted the fun in this document, you should check out:</p>
-            <div class="grid-x grid-padding-x">
-              <div class="large-4 medium-4 medium-push-2 cell">
-                <p><a href="https://get.foundation/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-              </div>
-              <div class="large-4 medium-4 medium-push-2 cell">
-                <p><a href="https://github.com/foundation/foundation-emails/discussions">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowlege.</p>
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-4 medium-4 medium-push-2 cell">
-                <p><a href="https://github.com/foundation/foundation-sites">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-              </div>
-              <div class="large-4 medium-4 medium-pull-2 cell">
-                <p><a href="https://twitter.com/FoundationCSS">@FoundationCSS</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it.</p>
-              </div>
-            </div>
-          </div>
+    </div>
+    <!-- /Sub Navigation -->
+    <!-- logo and banner -->
+    <div class="grid-x grid-padding-x align-middle vnu-header-logo grid-container">
+        <div class="cell small-1 medium-1 show-for-small-only">
+            <button class="menu-icon dark" type="button" data-toggle="offCanvas"></button>
         </div>
-      </div>
-
-      <div class="grid-x grid-padding-x">
-        <div class="large-8 medium-8 cell">
-          <h5>Here&rsquo;s your basic grid:</h5>
-          <!-- Grid Example -->
-
-          <div class="grid-x grid-padding-x">
-            <div class="large-12 cell">
-              <div class="primary callout">
-                <p><strong>This is a twelve cell section in a grid-x.</strong> Each of these includes a div.callout element so you can see where the cell are - it's not required at all for the grid.</p>
-              </div>
-            </div>
-          </div>
-          <div class="grid-x grid-padding-x">
-            <div class="large-6 medium-6 cell">
-              <div class="primary callout">
-                <p>Six cell</p>
-              </div>
-            </div>
-            <div class="large-6 medium-6 cell">
-              <div class="primary callout">
-                <p>Six cell</p>
-              </div>
-            </div>
-          </div>
-          <div class="grid-x grid-padding-x">
-            <div class="large-4 medium-4 small-4 cell">
-              <div class="primary callout">
-                <p>Four cell</p>
-              </div>
-            </div>
-            <div class="large-4 medium-4 small-4 cell">
-              <div class="primary callout">
-                <p>Four cell</p>
-              </div>
-            </div>
-            <div class="large-4 medium-4 small-4 cell">
-              <div class="primary callout">
-                <p>Four cell</p>
-              </div>
-            </div>
-          </div>
-
-          <hr />
-
-          <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-          <form>
-            <div class="grid-x grid-padding-x">
-              <div class="large-12 cell">
-                <label>Input Label</label>
-                <input type="text" placeholder="large-12.cell" />
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-4 medium-4 cell">
-                <label>Input Label</label>
-                <input type="text" placeholder="large-4.cell" />
-              </div>
-              <div class="large-4 medium-4 cell">
-                <label>Input Label</label>
-                <input type="text" placeholder="large-4.cell" />
-              </div>
-              <div class="large-4 medium-4 cell">
-                <div class="grid-x">
-                  <label>Input Label</label>
-                  <div class="input-group">
-                    <input type="text" placeholder="small-9.cell" class="input-group-field" />
-                    <span class="input-group-label">.com</span>
-                  </div>
+        <div class="cell small-5 medium-5 large-3 align-center">
+            <img src="images/logo-vnu.png" alt="VNU Logo">
+        </div>
+        <div class="cell small-5 medium-5 large-8">
+            <div class="media-object align-middle">
+                <div class="media-object-section">
+                    <img src="images/logo-clb-cuu-sinh-vien-vnu.png" alt="company logo">
                 </div>
-              </div>
+                <div class="media-object-section vnu-desc show-for-large">
+                    <h4>Nhân thành tựu - Nối yêu thương</h4>
+                    <p class="font-bold text-uppercase margin-0">chung tay cùng phát triển</p>
+                </div>
             </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-12 cell">
-                <label>Select Box</label>
-                <select>
-                  <option value="husker">Husker</option>
-                  <option value="starbuck">Starbuck</option>
-                  <option value="hotdog">Hot Dog</option>
-                  <option value="apollo">Apollo</option>
-                </select>
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-6 medium-6 cell">
-                <label>Choose Your Favorite</label>
-                <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-                <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-              </div>
-              <div class="large-6 medium-6 cell">
-                <label>Check these out</label>
-                <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-                <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-              </div>
-            </div>
-            <div class="grid-x grid-padding-x">
-              <div class="large-12 cell">
-                <label>Textarea Label</label>
-                <textarea placeholder="small-12.cell"></textarea>
-              </div>
-            </div>
-          </form>
         </div>
+    </div>
+    <!-- /logo and banner -->
+    <nav class="hover-underline-menu border-top-green show-for-medium" data-menu-underline-from-center>
+        <div class="grid-container">
+            <ul class="dropdown menu align-spaced" data-dropdown-menu>
+                <li class="parent has-submenu">
+                    <a href="#">Giới thiệu</a>
+                    <ul class="menu">
+                        <li><a href="#">Sứ mệnh lịch sử</a></li>
+                        <li><a href="#">Two</a></li>
+                        <li><a href="#">Three</a></li>
+                    </ul>
+                </li>
+                <li class="parent">
+                    <a href="#">Kết nối</a>
+                    <ul class="menu">
+                        <li><a href="#">One</a></li>
+                        <li><a href="#">Two</a></li>
+                        <li>
+                            <a href="#">Three</a>
+                            <ul class="menu">
+                                <li><a href="#">Item 1A</a></li>
+                                <li><a href="#">Item 1A</a></li>
+                                <li><a href="#">Item 1A</a></li>
+                                <!-- ... -->
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="parent">
+                    <a href="#">Chia sẻ</a>
+                </li>
+                <li class="parent">
+                    <a href="#">Hợp tác</a>
+                </li>
+                <li class="parent">
+                    <a href="#">Thành công</a>
+                </li>
+                <li class="parent">
+                    <a href="#">Đăng ký thành viên</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="offCanvas" class="off-canvas position-left show-for-small-only" data-off-canvas data-transition="push">
+        <button class="close-button" aria-label="Close menu" type="button" data-close>
+            <span aria-hidden="true">&times;</span>
+        </button>
 
-        <div class="large-4 medium-4 cell">
-          <h5>Try one of these buttons:</h5>
-          <p><a href="#" class="button">Simple Button</a><br/>
-          <a href="#" class="success button">Success Btn</a><br/>
-          <a href="#" class="alert button">Alert Btn</a><br/>
-          <a href="#" class="secondary button">Secondary Btn</a></p>
-          <div class="callout">
-            <h5>So many components, girl!</h5>
-            <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
-            <a href="https://get.foundation/sites/docs/" class="small button">Go to Foundation Docs</a>
-          </div>
-        </div>
-      </div>
+        <ul class="vertical menu drilldown" data-drilldown>
+            <li class="menu-text menu-inner">Menu</li>
+            <li class="menu-search-inner">
+                <input type="search" class="search-form margin-0" name="q" id="queryMobile" placeholder="Tìm kiếm">
+            </li>
+            <li>
+                <a href="#">Home</a>
+                <ul class="menu vertical nested">
+                    <li><a href="#">Sứ mệnh lịch sử</a></li>
+                    <li><a href="#">Two</a></li>
+                    <li><a href="#">Three</a></li>
+                </ul>
+            </li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li class="border-top-green">
+                <a href="#" class="">Các đơn vị thành viên và trực thuộc VNU</a>
+                <ul class="menu vertical">
+                    <li><a href="#">Alumni của các trường thành viên VNU</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    </div>
+</header>
+<div class="off-canvas-content" data-off-canvas-content>
+    <div class="orbit" role="region" aria-label="Favorite Text Ever" data-orbit>
+        <ul class="orbit-container">
+            <button class="orbit-previous hide-for-small-only" aria-label="previous"><span class="show-for-sr">Previous Slide</span><img
+                    src="images/arrow-left.png" width="23px"></button>
+            <button class="orbit-next hide-for-small-only" aria-label="next"><span class="show-for-sr">Next Slide</span><img
+                    src="images/arrow-right.png" width="23px"></button>
+            <li class="is-active orbit-slide">
+                <div class="docs-example-orbit-slide">
+                    <figure class="orbit-figure">
+                        <img class="orbit-image" src="images/slide-1.png" alt="Space">
+                    </figure>
+                </div>
+            </li>
+            <li class="orbit-slide">
+                <div class="docs-example-orbit-slide">
+                    <figure class="orbit-figure">
+                        <img class="orbit-image" src="images/slide-1.png" alt="Space">
+                    </figure>
+                </div>
+            </li>
+            <li class="orbit-slide">
+                <div class="docs-example-orbit-slide">
+                    <figure class="orbit-figure">
+                        <img class="orbit-image" src="images/slide-1.png" alt="Space">
+                    </figure>
+                </div>
+            </li>
+            <li class="orbit-slide">
+                <div class="docs-example-orbit-slide">
+                    <figure class="orbit-figure">
+                        <img class="orbit-image" src="images/slide-1.png" alt="Space">
+                    </figure>
+                </div>
+            </li>
+        </ul>
+        <nav class="orbit-bullets main-slide">
+            <button class="is-active" data-slide="0">
+                <span class="show-for-sr">First slide details.</span>
+                <span class="show-for-sr" data-slide-active-label>Current Slide</span>
+            </button>
+            <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+            <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+            <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+        </nav>
     </div>
 
-    <script src="node_modules/jquery/dist/jquery.js"></script>
-    <script src="node_modules/what-input/dist/what-input.js"></script>
-    <script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
-    <script src="js/app.js"></script>
-  </body>
+    <section class="grid-container margin-bottom-2 news">
+        <div class="vnu-heading grid-x align-middle align-justify">
+            <h2 class="h2 title">
+                <span class="button">
+                    <i class="fi-book"></i>
+                </span>Sự kiện nổi bật
+            </h2>
+            <a href="#" class="clear button">Xem thêm</a>
+        </div>
+        <div class="grid-x grid-padding-x align-middle">
+            <div class="card cell large-6 align-self-middle border-none">
+                <div class="vnu-border">
+                    <img src="images/image-01.jpg" class="width-100 vnu-thumbnail">
+                    <div class="card-section">
+                        <h6 class="font-bold">THỦ TƯỚNG NGUYỄN XUÂN PHÚC: THƯỚC ĐO GIÁO DỤC ĐẠI HỌC LÀ BAO NHIÊU SINH
+                            VIÊN KHỞI NGHIỆP THÀNH
+                            CÔNG</h6>
+                        <div class="grid-x grid-padding-x align-middle align-justify margin-horizontal-0 margin-bottom-1">
+                            <span class="badge category">Tin tức mới</span>
+                            <span class="color-gray"><i class="fi-calendar"></i> 12/01/2022</span>
+                        </div>
+                        <p class="color-gray">Nhằm ghi nhận những đóng góp quý báu đối với sự phát triển bền vững của
+                            ĐHQGHN, cũng như những đóng góp trong việc thúc đẩy hợp tác giữa ĐHQGHN với các đối tác
+                            Ireland
+                            nói chung và đóng góp cho dự án VIBE nói riêng, ngày 19/01/2022, Phó Giám...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cell large-6 flex-container flex-dir-column">
+                <div class="grid-x margin-bottom-1 flex-child-auto vnu-border">
+                    <div class="cell small-12 large-6">
+                        <img src="images/image-02.jpg" class="width-100 vnu-thumbnail">
+                    </div>
+                    <div class="cell small-12 large-6 padding-bottom-0 padding-top-1 padding-horizontal-1">
+                        <h6 class="font-bold">VNU – Alumni Talks số 1: “Quản trị tài năng”</h6>
+                        <div class="grid-x grid-padding-x align-middle align-justify margin-horizontal-0 margin-bottom-1">
+                            <span class="badge category">Tin tức mới</span>
+                            <span class="color-gray"><i class="fi-calendar"></i> 12/01/2022</span>
+                        </div>
+                        <p class="color-gray">Đúng 6h30 sáng nay, 10/6/2021, các thí sinh của đợt 1 (mã đợt thi: 211 – )
+                            ...</p>
+                    </div>
+                </div>
+                <div class="grid-x margin-bottom-1 flex-child-auto vnu-border">
+                    <div class="cell small-12 large-6">
+                        <img src="images/image-03.jpg" class="width-100 vnu-thumbnail">
+                    </div>
+                    <div class="cell small-12 large-6 padding-bottom-0 padding-top-1 padding-horizontal-1">
+                        <h6 class="font-bold">Thủ tướng Nguyễn Xuân Phúc: Thước đo giáo dục đ...</h6>
+                        <div class="grid-x grid-padding-x align-middle align-justify margin-horizontal-0 margin-bottom-1">
+                            <span class="badge category">Tin tức mới</span>
+                            <span class="color-gray"><i class="fi-calendar"></i> 12/01/2022</span>
+                        </div>
+                        <p class="color-gray">[Livestream tư vấn số 4 Giáo dục Tiểu học] Dạy học, thực hành STEM+ đơn
+                            ...</p>
+                    </div>
+                </div>
+                <div class="grid-x margin-bottom-1 flex-child-auto vnu-border">
+                    <div class="cell small-12 large-6">
+                        <img src="images/image-04.jpg" class="width-100 vnu-thumbnail">
+                    </div>
+                    <div class="cell small-12 large-6 padding-bottom-0 padding-top-1 padding-horizontal-1">
+                        <h6 class="font-bold">Kết nối cộng đồng cựu sinh viênKết nối sinh viên hiện...</h6>
+                        <div class="grid-x grid-padding-x align-middle align-justify margin-horizontal-0 margin-bottom-1">
+                            <span class="badge category">Tin tức mới</span>
+                            <span class="color-gray"><i class="fi-calendar"></i> 12/01/2022</span>
+                        </div>
+                        <p class="color-gray">Ngày 4/10/2021, ĐHQGHN đã thành lập Ban Chỉ đạo đẩy mạnh tiến độ t... </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="grid-container margin-bottom-2">
+        <div class="grid-x grid-padding-x">
+            <div class="cell medium-12 large-8 events">
+                <div class="vnu-heading grid-x align-middle align-justify">
+                    <h2 class="h2 title">
+                        <span class="button">
+                            <i class="fi-megaphone"></i>
+                        </span>Sự kiện sắp diễn ra
+                    </h2>
+                    <a href="#" class="clear button">Xem thêm</a>
+                </div>
+                <ul class="no-bullet">
+                    <li>
+                        <div class="grid-x align-middle align-justify">
+                            <div class="cell small-9 large-8 title">Một số văn bản mới của Thủ tướng Chính phủ, Bộ Giáo
+                                dục và Đào
+                                tạo, Bộ Nội vụ
+                            </div>
+                            <span class="badge warning">Mới</span>
+                            <a href="#" class="font-bold link show-for-medium">Xem chi tiết</a>
+                            <span class="button events-button margin-bottom-0 show-for-medium"><i
+                                    class="fi-arrow-right"></i></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="grid-x align-middle align-justify">
+                            <div class="cell small-12 large-9 title">Công tác nhân sự tháng 1/2022</div>
+                            <a href="#" class="link show-for-medium">Xem chi tiết</a>
+                            <span class="button events-button margin-bottom-0 show-for-medium"><i
+                                    class="fi-arrow-right"></i></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="grid-x align-middle align-justify">
+                            <div class="cell small-12 large-9 title">VNU – IFI: Tuyển sinh Khóa 3 -Chương trình Thạc sĩ
+                                thông tin và truyền thông, Chuyên ngành truyền thông số và xuất bản (INFOCOM) 2022-2023
+                            </div>
+                            <a href="#" class="link show-for-medium">Xem chi tiết</a>
+                            <span class="button events-button margin-bottom-0 show-for-medium"><i
+                                    class="fi-arrow-right"></i></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="grid-x align-middle align-justify">
+                            <div class="cell small-12 large-9 title">Thông báo tài trợ kinh phí cho các hoạt động khoa
+                                học – công nghệ năm 2022 của Trung tâm Hỗ trợ nghiên cứu châu Á
+                            </div>
+                            <a href="#" class="link show-for-medium">Xem chi tiết</a>
+                            <span class="button events-button margin-bottom-0 show-for-medium"><i
+                                    class="fi-arrow-right"></i></span>
+                        </div>
+                    </li>
+                </ul>
+            </div><!-- /.cell -->
+            <div class="cell medium-12 large-4">
+                <div class="birthday">
+                    <h2 class="text-center font-bold text-uppercase">CHÚC MỪNG SINH NHẬT</h2>
+                    <div class="orbit" role="region" aria-label="Favorite Text Ever" data-orbit>
+                        <ul class="orbit-container birthday-container">
+                            <li class="orbit-slide text-center">
+                                <img src="images/birthday.jpg" class="thumb" alt="birthday">
+                                <h2 class="font-bold text-uppercase">ông nguyễn hoàng sơn</h2>
+                                <p>Viện Tài chính - Ngân hàng</p>
+                            </li>
+                            <li class="orbit-slide text-center">
+                                <img src="images/bitsco.png" class="thumb" alt="birthday">
+                                <h2 class="font-bold text-uppercase">ông nguyễn bá tuấn anh</h2>
+                                <p>Hà Nội Aptech - Developer</p>
+                            </li>
+                        </ul>
+                        <nav class="orbit-bullets">
+                            <button class="is-active" data-slide="0">
+                                <span class="show-for-sr">First slide details.</span>
+                                <span class="show-for-sr" data-slide-active-label>Current Slide</span>
+                            </button>
+                            <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+                        </nav>
+                    </div>
+                    <img src="images/birthday_frame.png" class="frame show-for-medium" alt="birthday">
+                </div><!-- /.birthday -->
+            </div><!-- .cell -->
+        </div><!-- /.grid-x -->
+    </section>
+    <section class="grid-container media">
+        <div class="vnu-heading grid-x align-middle align-justify">
+            <h2 class="h2 title">
+                <span class="button">
+                    <i class="fi-photo"></i>
+                </span>Thư viện ảnh & Media
+            </h2>
+            <a href="#" class="clear button">Xem thêm</a>
+        </div>
+        <button class="customPrevBtn hide-for-small-only hide-for-medium-only" aria-label="previous"><span
+                class="show-for-sr">Previous Slide</span><img
+                src="images/arrow-left.png" width="23px"></button>
+        <button class="customNextBtn hide-for-small-only hide-for-medium-only" aria-label="next"><span
+                class="show-for-sr">Next Slide</span><img
+                src="images/arrow-right.png" width="23px"></button>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="images/media-1.png">
+            </div>
+            <div class="item">
+                <img src="images/media-2.png">
+            </div>
+            <div class="item">
+                <img src="images/media-3.png">
+            </div>
+            <div class="item">
+                <img src="images/media-4.png">
+            </div>
+            <div class="item">
+                <img src="images/media-1.png">
+            </div>
+            <div class="item">
+                <img src="images/media-2.png">
+            </div>
+            <div class="item">
+                <img src="images/media-3.png">
+            </div>
+            <div class="item">
+                <img src="images/media-4.png">
+            </div>
+        </div>
+    </section>
+    <section class="links">
+        <div class="grid-container show-for-medium">
+            <div class="grid-x grid-padding-x align-middle align-spaced">
+                <div class="cell medium-6 large-3">
+                    <div class="media-object">
+                        <div class="media-object-section">
+                            <img src="images/vnu-fanpage.png" class="width-75">
+                        </div>
+                        <div class="media-object-section align-self-middle">
+                            <h6 class="font-bold text-center">FANPAGE</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell medium-6 large-3">
+                    <div class="media-object">
+                        <div class="media-object-section">
+                            <img src="images/facebook.png" class="width-75">
+                        </div>
+                        <div class="media-object-section align-self-middle">
+                            <h6 class="font-bold text-center">GROUP FACEBOOK</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell medium-6 large-3">
+                    <div class="media-object">
+                        <div class="media-object-section">
+                            <img src="images/zalo.png" class="width-75">
+                        </div>
+                        <div class="media-object-section align-self-middle">
+                            <h6 class="font-bold text-center">ZALO CLUB</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell medium-6 large-3">
+                    <div class="media-object">
+                        <div class="media-object-section">
+                            <img src="images/vnu.png" class="width-75">
+                        </div>
+                        <div class="media-object-section align-self-middle">
+                            <h6 class="font-bold text-center">WEBSITE VNU</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-container show-for-small-only">
+            <div class="grid-x grid-padding-x align-middle">
+                <div class="cell small-6 margin-bottom-2">
+                    <div class="grid-x grid-padding-x text-center">
+                        <div class="cell small-12 margin-bottom-1">
+                            <img src="images/vnu-fanpage.png">
+                        </div>
+                        <div class="cell small-12">
+                            <h6 class="font-bold">FANPAGE</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell small-6 margin-bottom-2">
+                    <div class="grid-x grid-padding-x text-center">
+                        <div class="cell small-12 margin-bottom-1">
+                            <img src="images/zalo.png">
+                        </div>
+                        <div class="cell small-12">
+                            <h6 class="font-bold">ZALO CLUB</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell small-6 margin-bottom-2">
+                    <div class="grid-x grid-padding-x text-center">
+                        <div class="cell small-12 margin-bottom-1">
+                            <img src="images/zalo.png">
+                        </div>
+                        <div class="cell small-12">
+                            <h6 class="font-bold">ZALO CLUB</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell small-6 margin-bottom-2">
+                    <div class="grid-x grid-padding-x text-center">
+                        <div class="cell small-12 margin-bottom-1">
+                            <img src="images/vnu.png">
+                        </div>
+                        <div class="cell small-12">
+                            <h6 class="font-bold">WEBSITE VNU</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer padding-3">
+        <div class="grid-container">
+            <div class="grid-x grid-padding-x align-spaced">
+                <div class="cell small-12 large-5">
+                    <h5 class="font-bold">Bản quyền thuộc về Đại học Quốc gia Hà Nội</h5>
+                    <p><i class="fi-map"></i> 144 Xuân Thủy, quận Cầu Giấy, Hà Nội, Việt Nam</p>
+                </div>
+                <div class="cell small-12 large-4">
+                    <h5 class="font-bold">Các liên kết khác</h5>
+                    <div class="grid-x grid-padding-x align-spaced">
+                        <div class="cell large-6">
+                            <ul class="no-bullet">
+                                <li>Kênh Hỗ trợ Tiểu học</li>
+                                <li>Dự án ĐTXD Hòa Lạc</li>
+                                <li>Bản tin ĐHQGHN</li>
+                            </ul>
+                        </div>
+                        <div class="cell large-6">
+                            <ul class="no-bullet">
+                                <li>Tạp chí khoa học</li>
+                                <li>Đảm bảo chất lượng</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell small-12 large-3">
+                    <h5 class="font-bold">Thông tin</h5>
+                    <div class="grid-x grid-padding-x align-spaced">
+                        <div class="cell large-4">
+                            <ul class="no-bullet">
+                                <li>Email</li>
+                                <li>Liên hệ</li>
+                                <li>Sitemap</li>
+                            </ul>
+                        </div>
+                        <div class="cell large-8">
+                            <ul class="no-bullet">
+                                <li>Góp ý của bạn đọc</li>
+                                <li>Gửi bài viết</li>
+                                <li>Sự kiện sắp tới</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-container border-top-green padding-vertical-1">
+            <div class="grid-x grid-padding-x align-justify">
+                <div class="cell large-6">
+                    <p>Giấy phép số 40/GP-TTĐT, ngày 10/9/2014 của bộ thông tin và truyền thông</p>
+                </div>
+                <div class="cell large-6 text-right">
+                    <span>Online: <strong>800</strong></span>
+                    <span>Lượt truy cập: <strong>5.000</strong></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/what-input/dist/what-input.js"></script>
+<script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
+<script src="js/app.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script>
+    $('.owl-carousel').owlCarousel({
+        center: true,
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 2,
+                nav: false
+            },
+            600: {
+                items: 2,
+                nav: false
+            },
+            1000: {
+                items: 4,
+                nav: false,
+                loop: true
+            }
+        }
+    });
+    var owl = $('.owl-carousel');
+    owl.owlCarousel();
+    // Go to the next item
+    $('.customNextBtn').click(function () {
+        owl.trigger('next.owl.carousel');
+    })
+    // Go to the previous item
+    $('.customPrevBtn').click(function () {
+        // With optional speed parameter
+        // Parameters has to be in square bracket '[]'
+        owl.trigger('prev.owl.carousel', [300]);
+    })
+</script>
+</body>
 </html>

@@ -469,13 +469,6 @@ $offcanvas-full-screen-closebutton-size: 5rem;
     bottom: 110px;
     cursor: pointer;
   }
-
-  /* Small only */
-  @media screen and (max-width: 64em) {
-    .customPrevBtn, customNextBtn {
-      display: none;
-    }
-  }
 }
 
 .links {
