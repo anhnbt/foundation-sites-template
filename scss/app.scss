@@ -168,27 +168,29 @@ $menu-underline-from-center-border-thickness: 0.25rem;
     color: $vnu-text-green;
 
     h4 {
-      font-size: 1.5rem;
-      letter-spacing: 0.25rem;
+      font-size: 1.9rem;
+      letter-spacing: 0.28rem;
     }
 
     p {
-      font-size: 2rem;
+      font-size: 2.4rem;
+    }
+
+    @media screen and (min-width: 40em) {
+      h4 {
+        font-size: 1.3rem !important;
+        letter-spacing: 0.27rem !important;
+      }
+
+      p {
+        font-size: 1.8rem !important;
+      }
     }
   }
 }
 
 .border-top-green {
   border-top: 1px solid #CCE6D8;
-}
-
-$offcanvas-full-screen-bg: $black;
-$offcanvas-full-screen-side: left;
-$offcanvas-full-screen-closebutton-size: 5rem;
-
-.offcanvas-full-screen {
-  @include off-canvas-base($background: $offcanvas-full-screen-bg, $transition: 0.3s ease-in-out);
-  @include off-canvas-position($position: $offcanvas-full-screen-side, $orientation: horizontal, $sizes: 100%);
 }
 
 .menu-inner {
@@ -213,6 +215,7 @@ $offcanvas-full-screen-closebutton-size: 5rem;
   .orbit-previous, .orbit-next {
     background: rgba(255, 255, 255, 0.6);
     border-radius: 6.25rem;
+    cursor: pointer;
   }
 
   .orbit-previous {
@@ -224,6 +227,10 @@ $offcanvas-full-screen-closebutton-size: 5rem;
   }
 
   .orbit-bullets {
+    button {
+      cursor: pointer;
+    }
+
     .is-active {
       width: 1rem;
       height: 1rem;
@@ -240,6 +247,12 @@ $offcanvas-full-screen-closebutton-size: 5rem;
   bottom: 1.125rem;
   left: 0;
   right: 0;
+}
+
+@media screen and (min-width: 40em) {
+  .orbit-bullets.main-slide {
+    bottom: 0;
+  }
 }
 
 .news {
@@ -294,7 +307,7 @@ $offcanvas-full-screen-closebutton-size: 5rem;
 }
 
 /* Small only */
-@media screen and (max-width: 39.9375em) {
+@media screen and (min-width: 40em) {
   .news {
     margin-top: 24px;
 
@@ -369,6 +382,10 @@ $offcanvas-full-screen-closebutton-size: 5rem;
 
   .link {
     color: #9A1826;
+
+    &:hover {
+      font-weight: bold;
+    }
   }
 
   .badge {
@@ -399,6 +416,12 @@ $offcanvas-full-screen-closebutton-size: 5rem;
     border-radius: 4px;
     padding: 16px 40px;
     margin-bottom: 24px;
+
+    .title {
+      a {
+        color: $black;
+      }
+    }
 
     .title:before {
       content: "• ";
