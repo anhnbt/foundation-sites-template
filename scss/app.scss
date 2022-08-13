@@ -106,6 +106,26 @@ $menu-underline-from-center-border-thickness: 0.25rem;
   }
 }
 
+.drilldown {
+  a {
+    color: $vnu-link-gray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .is-drilldown-submenu-parent>a::after {
+    border-color: transparent transparent transparent $vnu-link-gray;
+  }
+
+  .js-drilldown-back>a::before {
+    border-color: transparent $vnu-link-gray transparent transparent;
+  }
+
+  a:hover {
+    color: $vnu-link-hover-green;
+  }
+}
+
 .hover-underline-menu {
   width: 100%;
 
@@ -161,8 +181,18 @@ $menu-underline-from-center-border-thickness: 0.25rem;
 }
 
 .vnu-header-logo {
-
   height: 150px;
+  /* Small only */
+  @media screen and (max-width: 39.9375em) {
+    height: 53px;
+    .logo-vnu-img {
+      height: 45px;
+    }
+    .logo-clb-img {
+      height: 45px;
+    }
+  }
+
 
   .vnu-desc {
     color: $vnu-text-green;
@@ -354,7 +384,7 @@ $menu-underline-from-center-border-thickness: 0.25rem;
   }
   .vnu-thumbnail {
     border-radius: 4px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.12);
   }
 }
 

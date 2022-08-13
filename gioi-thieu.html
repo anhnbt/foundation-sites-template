@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang giới thiệu</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<header>
+    <!-- Sub Navigation -->
+    <div class="top-bar-bg-green show-for-medium">
+        <div class="grid-x grid-padding-x grid-container">
+            <div class="cell small-6">
+                <input type="search" class="search-form margin-0" name="q" id="q" placeholder="Tìm kiếm">
+            </div>
+            <div class="cell small-6">
+                <ul class="dropdown menu align-right" data-dropdown-menu>
+                    <li>
+                        <a href="#" class="">Các đơn vị thành viên và trực thuộc VNU</a>
+                        <ul class="menu vertical">
+                            <li><a href="#">Alumni của các trường thành viên VNU</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /Sub Navigation -->
+    <!-- logo and banner -->
+    <div class="grid-x grid-padding-x align-middle align-center vnu-header-logo grid-container">
+        <div class="cell small-1 medium-1 show-for-small-only">
+            <button class="menu-icon dark" type="button" data-toggle="offCanvas"></button>
+        </div>
+        <div class="cell small-5 medium-5 large-3 align-center">
+            <img class="logo-vnu-img" src="images/logo-vnu.png" alt="VNU Logo">
+        </div>
+        <div class="cell small-5 medium-5 large-8">
+            <div class="media-object align-middle align-center margin-bottom-0">
+                <div class="media-object-section">
+                    <img class="logo-clb-img" src="images/logo-clb-cuu-sinh-vien-vnu.png" alt="company logo">
+                </div>
+                <div class="media-object-section vnu-desc show-for-large">
+                    <h4>Nhân thành tựu - Nối yêu thương</h4>
+                    <p class="font-bold text-uppercase margin-0">chung tay cùng phát triển</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /logo and banner -->
+    <nav class="hover-underline-menu border-top-green show-for-medium" data-menu-underline-from-center>
+        <div class="grid-container">
+            <ul class="dropdown menu align-spaced" data-dropdown-menu>
+                <li class="parent has-submenu">
+                    <a href="#">Giới thiệu</a>
+                    <ul class="menu">
+                        <li><a href="#">Sứ mệnh lịch sử</a></li>
+                        <li><a href="#">Two</a></li>
+                        <li><a href="#">Three</a></li>
+                    </ul>
+                </li>
+                <li class="parent">
+                    <a href="#">Kết nối</a>
+                    <ul class="menu">
+                        <li><a href="#">One</a></li>
+                        <li><a href="#">Two</a></li>
+                        <li>
+                            <a href="#">Three</a>
+                            <ul class="menu">
+                                <li><a href="#">Item 1A</a></li>
+                                <li><a href="#">Item 1A</a></li>
+                                <li><a href="#">Item 1A</a></li>
+                                <!-- ... -->
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="parent">
+                    <a href="#">Chia sẻ</a>
+                </li>
+                <li class="parent">
+                    <a href="#">Hợp tác</a>
+                </li>
+                <li class="parent">
+                    <a href="#">Thành công</a>
+                </li>
+                <li class="parent">
+                    <a href="#">Đăng ký thành viên</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="offCanvas" class="off-canvas position-left show-for-small-only" data-off-canvas data-transition="push">
+        <button class="close-button" aria-label="Close menu" type="button" data-close>
+            <span aria-hidden="true">&times;</span>
+        </button>
+
+        <ul class="vertical menu drilldown" data-drilldown data-back-button="&lt;li class&#x3D;&quot;js-drilldown-back&quot;&gt;&lt;a tabindex&#x3D;&quot;0&quot;&gt;Quay lại&lt;/a&gt;&lt;/li&gt;">
+            <li class="menu-text menu-inner">Menu</li>
+            <li class="menu-search-inner">
+                <input type="search" class="search-form margin-0" name="q" id="queryMobile" placeholder="Tìm kiếm">
+            </li>
+            <li>
+                <a href="#">Home</a>
+                <ul class="menu vertical nested">
+                    <li><a href="#">Sứ mệnh lịch sử</a></li>
+                    <li><a href="#">Two</a></li>
+                    <li><a href="#">Three</a></li>
+                </ul>
+            </li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li class="border-top-green">
+                <a href="#" class="">Các đơn vị thành viên và trực thuộc VNU</a>
+                <ul class="menu vertical">
+                    <li><a href="#">Alumni của các trường thành viên VNU</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    </div>
+</header>
+<div class="off-canvas-content" data-off-canvas-content>
+    <footer class="footer padding-3">
+        <div class="grid-container">
+            <div class="grid-x grid-padding-x align-spaced">
+                <div class="cell small-12 large-5">
+                    <h5 class="font-bold">Bản quyền thuộc về Đại học Quốc gia Hà Nội</h5>
+                    <p><i class="fi-map"></i> 144 Xuân Thủy, quận Cầu Giấy, Hà Nội, Việt Nam</p>
+                </div>
+                <div class="cell small-12 large-4">
+                    <h5 class="font-bold">Các liên kết khác</h5>
+                    <div class="grid-x grid-padding-x align-spaced">
+                        <div class="cell large-6">
+                            <ul class="no-bullet">
+                                <li>Kênh Hỗ trợ Tiểu học</li>
+                                <li>Dự án ĐTXD Hòa Lạc</li>
+                                <li>Bản tin ĐHQGHN</li>
+                            </ul>
+                        </div>
+                        <div class="cell large-6">
+                            <ul class="no-bullet">
+                                <li>Tạp chí khoa học</li>
+                                <li>Đảm bảo chất lượng</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell small-12 large-3">
+                    <h5 class="font-bold">Thông tin</h5>
+                    <div class="grid-x grid-padding-x align-spaced">
+                        <div class="cell large-4">
+                            <ul class="no-bullet">
+                                <li>Email</li>
+                                <li>Liên hệ</li>
+                                <li>Sitemap</li>
+                            </ul>
+                        </div>
+                        <div class="cell large-8">
+                            <ul class="no-bullet">
+                                <li>Góp ý của bạn đọc</li>
+                                <li>Gửi bài viết</li>
+                                <li>Sự kiện sắp tới</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-container border-top-green padding-vertical-1">
+            <div class="grid-x grid-padding-x align-justify">
+                <div class="cell large-6">
+                    <p>Giấy phép số 40/GP-TTĐT, ngày 10/9/2014 của bộ thông tin và truyền thông</p>
+                </div>
+                <div class="cell large-6 text-right">
+                    <span>Online: <strong>800</strong></span>
+                    <span>Lượt truy cập: <strong>5.000</strong></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/what-input/dist/what-input.min.js"></script>
+<script src="node_modules/foundation-sites/dist/js/foundation.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
