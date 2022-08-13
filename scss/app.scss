@@ -142,7 +142,7 @@ $menu-underline-from-center-border-thickness: 0.25rem;
 
       a {
         color: $vnu-link-gray;
-        padding: 1.2rem 1.5rem;
+        padding: 0.5rem;
       }
 
       a:hover {
@@ -330,6 +330,16 @@ $menu-underline-from-center-border-thickness: 0.25rem;
   background-color: #FFEEEF;
   color: #9A1826;
   padding: 8px 24px;
+  border-radius: 100px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.badge.tags {
+  background-color: #FFEEEF;
+  color: #9A1826;
+  padding: 6px 20px;
   border-radius: 100px;
   font-weight: 400;
   font-size: 14px;
@@ -538,4 +548,25 @@ $menu-underline-from-center-border-thickness: 0.25rem;
 .footer {
   background-color: $vnu-bg-btn-green;
   color: $white;
+}
+
+.category {
+  .heading {
+    h2 {
+      color: $vnu-bg-btn-green;
+      font-size: 30px;
+      line-height: 48px;
+      font-weight: 700;
+      border-bottom: 1px solid #CCE6D8;
+      &:before {
+        content:'';
+        padding-left: 20px;
+        border-left: 4px solid $vnu-bg-btn-green;
+      }
+    }
+  }
+}
+
+.vnu-shadow {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }

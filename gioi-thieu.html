@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang giới thiệu</title>
+    <link rel="stylesheet" href="foundation-icons/foundation-icons.css">
     <link rel="stylesheet" href="css/app.css">
 </head>
-<body>
+<body class="category">
 <header>
     <!-- Sub Navigation -->
     <div class="top-bar-bg-green show-for-medium">
@@ -48,11 +49,11 @@
         </div>
     </div>
     <!-- /logo and banner -->
-    <nav class="hover-underline-menu border-top-green show-for-medium" data-menu-underline-from-center>
+    <nav class="hover-underline-menu border-top-green show-for-medium vnu-shadow" data-menu-underline-from-center>
         <div class="grid-container">
             <ul class="dropdown menu align-spaced" data-dropdown-menu>
-                <li class="parent has-submenu">
-                    <a href="#">Giới thiệu</a>
+                <li class="parent has-submenu underline-from-center is-active">
+                    <a href="#" class="">Giới thiệu</a>
                     <ul class="menu">
                         <li><a href="#">Sứ mệnh lịch sử</a></li>
                         <li><a href="#">Two</a></li>
@@ -95,7 +96,8 @@
             <span aria-hidden="true">&times;</span>
         </button>
 
-        <ul class="vertical menu drilldown" data-drilldown data-back-button="&lt;li class&#x3D;&quot;js-drilldown-back&quot;&gt;&lt;a tabindex&#x3D;&quot;0&quot;&gt;Quay lại&lt;/a&gt;&lt;/li&gt;">
+        <ul class="vertical menu drilldown" data-drilldown
+            data-back-button="&lt;li class&#x3D;&quot;js-drilldown-back&quot;&gt;&lt;a tabindex&#x3D;&quot;0&quot;&gt;Quay lại&lt;/a&gt;&lt;/li&gt;">
             <li class="menu-text menu-inner">Menu</li>
             <li class="menu-search-inner">
                 <input type="search" class="search-form margin-0" name="q" id="queryMobile" placeholder="Tìm kiếm">
@@ -119,9 +121,45 @@
             </li>
         </ul>
     </div>
-    </div>
 </header>
 <div class="off-canvas-content" data-off-canvas-content>
+    <main class="grid-container">
+        <div class="heading margin-top-1">
+            <h2 class="text-uppercase">Giới thiệu chung</h2>
+        </div>
+        <div class="grid-x">
+            <div class="cell medium-6 large-3">
+                <ul class="vertical menu">
+                    <li><a href="#">Sứ mệnh</a></li>
+                    <li><a href="#">Cơ cấu tổ chức & Quy chế hoạt động</a></li>
+                    <li><a href="#">Chủ tịch, Phó chủ tịch & Ban chủ nhiệm</a></li>
+                    <li><a href="#">Ban liên lạc</a></li>
+                </ul>
+            </div>
+            <div class="cell medium-6 large-9">
+                <nav aria-label="You are here:" role="navigation">
+                    <ul class="breadcrumbs">
+                        <li><a href="#">Trang chủ</a></li>
+                        <li>
+                            <span class="show-for-sr">Current: </span> Sứ mệnh
+                        </li>
+                    </ul>
+                </nav>
+                <article class="shadow padding-2 margin-bottom-2">
+                    <h1>Sứ mệnh của Câu lạc bộ CSV</h1>
+                    <div class="content">
+                        <p>Ngày 9/3/2022, Giám đốc ĐHQGHN đã ký quyết định số 565/QĐ-ĐHQGHN phê duyệt danh sách ứng viên được cấp học bổng lần đầu của ĐHQGHN dành cho nghiên cứu sinh và thực tập sinh có năng lực nghiên cứu xuất sắc.</p>
+                        <p>Theo đó, có 11 nghiên cứu sinh và 20 thực tập sinh được cấp học bổng lần này. Mỗi suất học bổng trị giá 100 triệu đồng/nghiên cứu sinh và 120 triệu đồng/thực tập sinh, các ứng viên được nhận trước 50% giá trị học bổng. Đây là nguồn hỗ trợ có ý nghĩa và tác động to lớn tạo nên những đột phá trong nâng cao chất lượng và hiệu quả hoạt động đào tạo và nghiên cứu khoa học của ĐHQGHN.</p>
+                        <img src="images/image-content-01.png" class="width-100">
+                        <p>Trước đó, ngày 19/11/2021, Giám đốc ĐHQGHN đã ký Quyết định số 3688/QĐ-ĐHQGHN ban hành Quy định về việc hỗ trợ học bổng cho các nghiên cứu sinh và các thực tập sinh sau tiến sỹ ở ĐHQGHN. Thông qua quyết định này, ĐHQGHN sẽ thu hút được nhiều nghiên cứu sinh và tiến sĩ giỏi đến học tập, nghiên cứu. Từ đó, vị thế và tiềm lực khoa học của ĐHQGHN sẽ được gia tăng, đồng thời, ảnh hưởng và xếp hạng của ĐHQGHN trong hệ thống giáo dục đại học Việt Nam và quốc tế cũng sẽ được giữ vững và tăng trưởng mạnh mẽ trong thời gian tới.</p>
+                        <p>ĐHQGHN là cơ sở giáo dục đại học công lập đầu tiên trong cả nước tiên phong thiết lập và cấp học bổng cho thực tập sinh sau tiến sĩ.</p>
+                        <p>Danh sách ứng viên được cấp học bổng dành cho nghiên cứu sinh có năng lực nghiên cứu xuất sắc</p>
+                    </div>
+                    <div class="tags"><i class="fi-folder"></i> Từ khóa <span class="badge tags">Học bổng</span> <span class="badge tags">ĐHCQ</span> </div>
+                </article>
+            </div>
+        </div>
+    </main>
     <footer class="footer padding-3">
         <div class="grid-container">
             <div class="grid-x grid-padding-x align-spaced">
@@ -168,7 +206,6 @@
                 </div>
             </div>
         </div>
-
         <div class="grid-container border-top-green padding-vertical-1">
             <div class="grid-x grid-padding-x align-justify">
                 <div class="cell large-6">
