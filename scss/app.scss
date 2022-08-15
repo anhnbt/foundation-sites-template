@@ -285,7 +285,7 @@ $menu-underline-from-center-border-thickness: 0.25rem;
   }
 }
 
-.news {
+.home .news {
   margin-top: 80px;
 }
 
@@ -336,6 +336,16 @@ $menu-underline-from-center-border-thickness: 0.25rem;
   line-height: 22px;
 }
 
+.badge.chucvu {
+  background-color: #E6F2EC;
+  color: #01803D;
+  padding: 8px 14px;
+  border-radius: 4px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+}
+
 .badge.tags {
   background-color: #FFEEEF;
   color: #9A1826;
@@ -347,7 +357,7 @@ $menu-underline-from-center-border-thickness: 0.25rem;
 }
 
 /* Small only */
-@media screen and (min-width: 40em) {
+@media screen and (max-width: 39.9375em) {
   .news {
     margin-top: 24px;
 
@@ -417,14 +427,6 @@ $menu-underline-from-center-border-thickness: 0.25rem;
         color: #9A1826;
         font-size: 1.25rem;
       }
-    }
-  }
-
-  .link {
-    color: #9A1826;
-
-    &:hover {
-      font-weight: bold;
     }
   }
 
@@ -569,4 +571,36 @@ $menu-underline-from-center-border-thickness: 0.25rem;
 
 .vnu-shadow {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.vnu-button {
+  background-color: $vnu-bg-btn-green;
+}
+.vnu-button-facebook {
+  background-color: #1342B9;
+  &:hover {
+    background-color: #365899;
+  }
+}
+.vnu-button-while {
+  background-color: $white;
+  color: $black;
+}
+
+.view-more {
+  color: #9A1826;
+
+  &:hover {
+    font-weight: bold;
+    color: #9A1826;
+  }
+}
+.vnu-custom-bullet {
+  li::before {
+    content: "\2022";
+    color: #67B38B;
+    font-weight: bold;
+    font-size: 20px;
+    display: inline-block;
+    padding-right: 1rem;
+  }
 }
